@@ -18,24 +18,26 @@ const Navbar = () => {
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <div
-            style={{
-              display: 'flex',
-              justifyContent: 'center',
-              alignItems: 'center',
-            }}
-          >
-            <img src={logo} alt="NJWWA logo" />
-            <span
+          <AniLink fade to="/">
+            <div
               style={{
-                color: '#3fd0d4',
-                fontSize: '2.3rem',
-                marginLeft: '0.5rem',
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
               }}
             >
-              NJAAW
-            </span>
-          </div>
+              <img src={logo} alt="NJWWA logo" />
+              <span
+                style={{
+                  color: '#3fd0d4',
+                  fontSize: '2.3rem',
+                  marginLeft: '0.5rem',
+                }}
+              >
+                NJAAW
+              </span>
+            </div>
+          </AniLink>
 
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />

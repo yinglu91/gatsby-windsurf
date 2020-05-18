@@ -31,8 +31,8 @@ const Footer = () => {
       </div>
 
       <div className={styles.copyright}>
-        copyright &copy; backroads travel company {new Date().getFullYear()} all
-        rights reserved
+        copyright &copy; NJ Windsurf Watersport Association
+        {new Date().getFullYear()} all rights reserved
       </div>
     </footer>
   )

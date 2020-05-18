@@ -4,7 +4,7 @@ import StyledHero from '../components/StyledHero'
 import { graphql } from 'gatsby'
 import Products from '../components/Products/Products'
 import SEO from '../components/SEO'
-import Banner from '../components/Banner'
+import Title from '../components/Title'
 
 const ProductsPage = ({ data }) => {
   return (
@@ -15,6 +15,7 @@ const ProductsPage = ({ data }) => {
           sadfsadfsaf shopping online is font...
         </h4>
       </StyledHero>
+      <Title title="our" subtitle="products" />
 
       <Products />
     </Layout>
