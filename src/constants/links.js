@@ -4,6 +4,10 @@ export default [
     text: 'home',
   },
   {
+    path: '/blogs',
+    text: 'blogs',
+  },
+  {
     path: '/products',
     text: 'products',
   },

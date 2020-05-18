@@ -4,9 +4,7 @@ import { Helmet } from 'react-helmet'
 import Img from 'gatsby-image'
 import Layout from '../components/Layout'
 import Lightbox from '../components/lightbox'
-
 import styles from '../components/old/hero.module.css'
-import VideoEmbed from '../components/VideoEmbed'
 
 const BlogPostTemplate = ({ location, data }) => {
   const post = data.contentfulBlogPost
@@ -33,21 +31,6 @@ const BlogPostTemplate = ({ location, data }) => {
           >
             {post.publishDate}
           </p>
-
-          {/* <VideoEmbed
-            lessonLink="https://www.youtube.com/embed/DAPY1g5m0I8"
-            lessonTitle="Frère voyez... Du Gai Soleil from Werther"
-          /> */}
-
-          {/* <VideoEmbed
-            lessonLink="https://www.youtube.com/embed/AxbezmGrD94"
-            lessonTitle="Il bacio by Luigi Arditi"
-          />
-
-          <VideoEmbed
-            lessonLink="https://www.youtube.com/embed/ZXM6-reS_LA"
-            lessonTitle="Nacht und Traume by Schubert"
-          /> */}
 
           {post.images && <Lightbox images={post.images} />}
 

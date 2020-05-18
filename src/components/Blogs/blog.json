@@ -1,0 +1,19 @@
+{
+  "data": {
+    "allContentfulBlogPost": {
+      "nodes": [
+        {
+          "id": "2cQNq2OVtOpzsNnzppSgmY",
+          "slug": "njwwa_fun_fest",
+          "title": "NJWWA Fun Fest",
+          "publishDate": "May 8th, 2020",
+          "heroImage": {
+            "fixed": {
+              "src": "//images.ctfassets.net/olumsymogrql/78pIF3eyO6BO530h2BFpYP/76e694d4a9ebf7fb5e134e93b914a095/Image_10.jpeg?w=1180&q=50&bg=rgb%3A000000"
+            }
+          }
+        }
+      ]
+    }
+  }
+}
