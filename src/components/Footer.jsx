@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.links}>
         {links.map((item, index) => (
-          <Link key={index} to={item.path}>
+          <Link key={index} to={item.path} activeStyle={{ color: '#3fd0d4' }}>
             {item.text}
           </Link>
         ))}

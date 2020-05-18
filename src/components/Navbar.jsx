@@ -54,7 +54,7 @@ const Navbar = () => {
         >
           {links.map((item, index) => (
             <li key={index}>
-              <AniLink fade to={item.path}>
+              <AniLink fade to={item.path} activeStyle={{ color: '#3fd0d4' }}>
                 {item.text}
               </AniLink>
             </li>
