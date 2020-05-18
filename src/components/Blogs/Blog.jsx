@@ -1,45 +1,28 @@
 import React from 'react'
-import Image from 'gatsby-image'
 import styles from '../../css/blog-card.module.css'
+import Image from 'gatsby-image'
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
-import { useStaticQuery, graphql } from 'gatsby'
 
-const getImage = graphql`
-  query {
-    file(relativePath: { eq: "defaultBcg.png" }) {
-      childImageSharp {
-        fixed {
-          ...GatsbyImageSharpFixed
-        }
-      }
-    }
-  }
-`
-
-const Blog = ({ blog }) => {
-  const data = useStaticQuery(getImage) // can't put inside if
-  const img = data.file.childImageSharp.fixed
-
+const BlogCard = ({ blog }) => {
   const { title, publishDate, slug, heroImage } = blog
-  let mainImage = heroImage ? heroImage.fixed : img
-
   return (
-    <article className={styles.tour}>
+    <article className={styles.blog}>
       <div className={styles.imgContainer}>
-        <Image fixed={mainImage} className={styles.img} alt="single blog" />
+        <Image
+          fixed={heroImage.fixed}
+          className={styles.img}
+          alt="single post"
+        />
         <AniLink fade className={styles.link} to={`/blogs/${slug}`}>
-          details
+          read more
         </AniLink>
+        <h6 className={styles.date}>{publishDate}</h6>
       </div>
-
       <div className={styles.footer}>
-        <h3>{title}</h3>
-        <div className={styles.info}>
-          <h4 className={styles.country}>{publishDate}</h4>
-        </div>
+        <h4>{title}</h4>
       </div>
     </article>
   )
 }
 
-export default Blog
+export default BlogCard

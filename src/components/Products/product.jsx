@@ -13,7 +13,7 @@ const options = {
           src={url}
           alt={title}
           className={styles.img}
-          style={{ width: 200 }}
+          style={{ height: 200 }}
           alt="single product"
         />
       )
