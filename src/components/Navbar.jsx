@@ -34,7 +34,7 @@ const Navbar = () => {
                   marginLeft: '0.5rem',
                 }}
               >
-                NJAAW
+                NJWWA
               </span>
             </div>
           </AniLink>

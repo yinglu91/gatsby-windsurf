@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import { Dialog } from '@reach/dialog'
-import '@reach/dialog/styles.css'
+import 'react-responsive-modal/styles.css'
+import { Modal } from 'react-responsive-modal'
 
 const LightboxContainer = styled.div`
   display: grid;
@@ -36,6 +36,10 @@ const Lightbox = ({ images }) => {
   const [showLightbox, setShowLightbox] = useState(false)
   const [selectedImage, setSelectedImage] = useState(null)
 
+  const onCloseModal = () => {
+    setShowLightbox(false)
+  }
+
   return (
     <>
       <LightboxContainer>
@@ -52,9 +56,8 @@ const Lightbox = ({ images }) => {
           </PreviewButton>
         ))}
       </LightboxContainer>
-
       {showLightbox && (
-        <Dialog>
+        <Modal open={showLightbox} onClose={onCloseModal} center>
           <div
             style={{
               backgroundColor: '#ffffff',
@@ -82,14 +85,9 @@ const Lightbox = ({ images }) => {
                   <p>{selectedImage.description}</p>
                 )}
               </div>
-              <div>
-                <button type="button" onClick={() => setShowLightbox(false)}>
-                  x
-                </button>
-              </div>
             </div>
           </div>
-        </Dialog>
+        </Modal>
       )}
     </>
   )
@@ -98,3 +96,5 @@ const Lightbox = ({ images }) => {
 export default Lightbox
 
 // https://www.gatsbyjs.org/blog/2018-11-03-building-an-accessible-lightbox/#connecting-the-image-click-to-the-lightbox
+
+// https://www.npmjs.com/package/react-responsive-modal

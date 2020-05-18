@@ -1,60 +1,51 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import { Helmet } from 'react-helmet'
-import Img from 'gatsby-image'
+import { Link, graphql } from 'gatsby'
 import Layout from '../components/Layout'
+import styles from '../css/single-blog.module.css'
+// import AniLink from 'gatsby-plugin-transition-link/AniLink'
+import StyledHero from '../components/StyledHero'
 import Lightbox from '../components/lightbox'
-import styles from '../components/old/hero.module.css'
 
-const BlogPostTemplate = ({ location, data }) => {
-  const post = data.contentfulBlogPost
+import SEO from '../components/SEO'
+
+const BlogTemplate = ({ data }) => {
+  const { title, publishDate, heroImage, images, body } = data.blog
+
   const siteTitle = data.site.siteMetadata.title
-
   return (
     <Layout>
-      <div style={{ background: '#fff' }}>
-        <Helmet title={`${post.title} | ${siteTitle}`} />
-        <div className={styles.hero}>
-          <Img
-            className={styles.heroImage}
-            alt={post.title}
-            fluid={post.heroImage.fluid}
-          />
-        </div>
+      <SEO title={title} />
+      <StyledHero img={heroImage.fluid} />
+      <section className={styles.blog}>
+        <div className={styles.center}>
+          <h1>{title}</h1>
+          <h4>published at : {publishDate}</h4>
 
-        <div className="wrapper">
-          <h1 className="section-headline">{post.title}</h1>
-          <p
-            style={{
-              display: 'block',
-            }}
-          >
-            {post.publishDate}
-          </p>
-
-          {post.images && <Lightbox images={post.images} />}
+          {images && <Lightbox images={images} />}
 
           <div
             dangerouslySetInnerHTML={{
-              __html: post.body.childMarkdownRemark.html,
+              __html: body.childMarkdownRemark.html,
             }}
           />
+
+          <Link fade to="/blogs" className="btn-primary">
+            all posts
+          </Link>
         </div>
-      </div>
+      </section>
     </Layout>
   )
 }
 
-export default BlogPostTemplate
-
-export const pageQuery = graphql`
+export const query = graphql`
   query BlogPostBySlug($slug: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    contentfulBlogPost(slug: { eq: $slug }) {
+    blog: contentfulBlogPost(slug: { eq: $slug }) {
       title
       publishDate(formatString: "MMMM Do, YYYY")
       heroImage {
@@ -77,3 +68,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+export default BlogTemplate
