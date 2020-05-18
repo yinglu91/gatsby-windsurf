@@ -4,19 +4,39 @@ import styles from '../css/navbar.module.css'
 import { FaAlignRight } from 'react-icons/fa'
 import links from '../constants/links'
 import socialIcons from '../constants/social-icons'
-import logo from '../images/logo.svg'
+import logo from '../images/logo2.jpg'
+import Title from './Title'
+import styled from 'styled-components'
 
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
   const toggleNav = () => {
-    setNav(isOpen => !isOpen)
+    setNav((isOpen) => !isOpen)
   }
 
   return (
     <nav className={styles.navbar}>
       <div className={styles.navCenter}>
         <div className={styles.navHeader}>
-          <img src={logo} alt="backroads logo" />
+          <div
+            style={{
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+            }}
+          >
+            <img src={logo} alt="NJWWA logo" />
+            <span
+              style={{
+                color: '#3fd0d4',
+                fontSize: '2.3rem',
+                marginLeft: '0.5rem',
+              }}
+            >
+              NJAAW
+            </span>
+          </div>
+
           <button type="button" className={styles.logoBtn} onClick={toggleNav}>
             <FaAlignRight className={styles.logoIcon} />
           </button>
@@ -58,3 +78,10 @@ const Navbar = () => {
 }
 
 export default Navbar
+
+const imgDiv = styled.div`
+  text-transform: lowercase;
+  font-size: 2.3rem;
+  margin-bottom: 2rem;
+  color: var(--primaryColor);
+`
