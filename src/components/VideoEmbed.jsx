@@ -1,10 +1,11 @@
 import React, { useRef, useState, useCallback, useLayoutEffect } from 'react'
 import PropTypes from 'prop-types'
+import styles from '../css/video.module.css'
 
 // width:height
 const VIDEO_RATIO = 9 / 16
 
-const VideoEmbed = ({ lessonLink, lessonTitle }) => {
+const VideoEmbed = ({ url, title, date }) => {
   const [iframeWidth, setIframeWidth] = useState(0)
   const iframeRef = useRef()
 
@@ -26,24 +27,22 @@ const VideoEmbed = ({ lessonLink, lessonTitle }) => {
     <>
       <iframe
         ref={iframeRef}
-        style={{
-          border: `none`,
-          maxWidth: `100%`,
-        }}
+        className={styles.vedio1}
         width={1000}
         height={iframeWidth * VIDEO_RATIO}
-        src={`${lessonLink}`}
-        title={`Video: ${lessonTitle}`}
+        src={`${url}`}
+        title={`Video: ${title}`}
         allowFullScreen
       />
-      <h3>{lessonTitle}</h3>
+      <h4>{title}</h4>
+      {date && <h6 className={styles.date}>{date}</h6>}
     </>
   )
 }
 
 VideoEmbed.propTypes = {
-  lessonLink: PropTypes.string.isRequired,
-  lessonTitle: PropTypes.string.isRequired,
+  url: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
 }
 
 export default VideoEmbed

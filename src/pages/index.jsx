@@ -6,6 +6,7 @@ import About from '../components/Home/About'
 import StyledHero from '../components/StyledHero'
 import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
+import VideoEmbed from '../components/VideoEmbed'
 
 const IndexPage = ({ data }) => {
   return (
@@ -23,6 +24,12 @@ const IndexPage = ({ data }) => {
       </StyledHero>
 
       <About />
+
+      <VideoEmbed
+        url="https://www.youtube.com/embed/W7kJ6smRh9g"
+        title="Slalom Windsurfing at 25 knots"
+        date="January 11, 2012"
+      />
     </Layout>
   )
 }

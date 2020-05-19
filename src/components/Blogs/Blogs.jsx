@@ -9,7 +9,7 @@ const getData = graphql`
         id: contentful_id
         slug
         title
-        publishDate(formatString: "MMMM Do, YYYY")
+        publishDate(formatString: "MMMM DD, YYYY")
         heroImage {
           fixed(width: 300, height: 200) {
             ...GatsbyContentfulFixed
