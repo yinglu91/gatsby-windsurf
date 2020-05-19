@@ -46,11 +46,3 @@ export const query = graphql`
   }
 `
 export default IndexPage
-
-// import React from 'react'
-
-// const index = () => {
-//   return <div>hellow world</div>
-// }
-
-// export default index

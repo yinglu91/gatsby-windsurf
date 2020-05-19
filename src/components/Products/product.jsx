@@ -6,8 +6,13 @@ import styles from '../../css/tour.module.css'
 const options = {
   renderNode: {
     'embedded-asset-block': (node) => {
+      if (!node.data.target.fields) {
+        return
+      }
+
       const { title, file } = node.data.target.fields
       const url = file['en-US'].url
+
       return (
         <img
           src={url}
