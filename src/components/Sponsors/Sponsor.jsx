@@ -1,12 +1,12 @@
 import React from 'react'
 import Img from 'gatsby-image'
-import styles from '../../css/blog-card.module.css'
+import styles from '../../css/sponsor.module.css'
 
 const sponsor = ({ sponsor }) => {
   const { url, title } = sponsor
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer">
-      <article className={styles.blog}>
+    <article className={styles.tour}>
+      <a href={url} target="_blank" rel="noopener noreferrer">
         <div className={styles.imgContainer}>
           <Img
             resolutions={
@@ -16,11 +16,12 @@ const sponsor = ({ sponsor }) => {
             className={styles.img}
           />
         </div>
-        <div className={styles.footer}>
-          <h4>{title}</h4>
-        </div>
-      </article>
-    </a>
+      </a>
+
+      <div className={styles.footer}>
+        <h3>{title}</h3>
+      </div>
+    </article>
   )
 }
 

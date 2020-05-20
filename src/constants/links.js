@@ -18,6 +18,11 @@ export default [
   },
 
   {
+    path: '/sites',
+    text: 'sites',
+  },
+
+  {
     path: '/contact',
     text: 'contact',
   },
