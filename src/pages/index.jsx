@@ -17,7 +17,7 @@ const IndexPage = ({ data }) => {
           title="NJ Windsurf Watersport Association"
           info="lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente id sit ut soluta quam."
         >
-          <AniLink fade to="/products" className="btn-white">
+          <AniLink fade to="/videos" className="btn-white">
             <b>EXPLORE THE ACTION</b>
           </AniLink>
         </Banner>

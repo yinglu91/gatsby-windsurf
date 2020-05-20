@@ -7,7 +7,7 @@ const sponsor = ({ sponsor }) => {
   return (
     <article className={styles.tour}>
       <a href={url} target="_blank" rel="noopener noreferrer">
-        <div className={styles.imgContainer}>
+        <div className={styles.hvrFloatShadow}>
           <Img
             resolutions={
               sponsor.childScreenshot.screenshotFile.childImageSharp.resolutions
