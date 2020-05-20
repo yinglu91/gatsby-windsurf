@@ -24,12 +24,6 @@ const IndexPage = ({ data }) => {
       </StyledHero>
 
       <About />
-
-      <VideoEmbed
-        url="https://www.youtube.com/embed/W7kJ6smRh9g"
-        title="Slalom Windsurfing at 25 knots"
-        date="January 11, 2012"
-      />
     </Layout>
   )
 }

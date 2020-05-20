@@ -5,7 +5,7 @@ import styles from '../css/video.module.css'
 // width:height
 const VIDEO_RATIO = 9 / 16
 
-const VideoEmbed = ({ url, title, date }) => {
+const VideoEmbed = ({ url, title }) => {
   const [iframeWidth, setIframeWidth] = useState(0)
   const iframeRef = useRef()
 
@@ -34,8 +34,6 @@ const VideoEmbed = ({ url, title, date }) => {
         title={`Video: ${title}`}
         allowFullScreen
       />
-      <h4>{title}</h4>
-      {date && <h6 className={styles.date}>{date}</h6>}
     </>
   )
 }
