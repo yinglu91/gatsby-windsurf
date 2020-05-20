@@ -18,7 +18,7 @@ const IndexPage = ({ data }) => {
           info="lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente id sit ut soluta quam."
         >
           <AniLink fade to="/products" className="btn-white">
-            online shopping
+            <b>EXPLORE THE ACTION</b>
           </AniLink>
         </Banner>
       </StyledHero>

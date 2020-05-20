@@ -5,7 +5,6 @@ import { FaAlignRight } from 'react-icons/fa'
 import links from '../constants/links'
 import socialIcons from '../constants/social-icons'
 import logo from '../images/logo2.jpg'
-import Title from './Title'
 import styled from 'styled-components'
 
 const Navbar = () => {
