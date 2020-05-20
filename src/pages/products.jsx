@@ -9,7 +9,7 @@ import Title from '../components/Title'
 const ProductsPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Grocer" />
+      <SEO title="Products" />
       <StyledHero img={data.defaultBcg.childImageSharp.fluid}>
         <h4 style={{ color: 'white' }}>
           sadfsadfsaf shopping online is font...

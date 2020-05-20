@@ -25,15 +25,13 @@ if (!spaceId || !accessToken) {
 
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
-
-    title: 'NJ WWA',
+    title: 'NJWWA',
     description:
       'Explore awesome windsurf & watersport what makes each of them unique. forget your daily routine & say yes to adventure in water',
     author: 'njwwa',
     twitterUsername: '@njwwa',
     image: 'defaultBcg.png',
-    siteUrl: 'https://njwwa.org',
+    siteUrl: 'http://windsurfnj.org/',
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
