@@ -21,4 +21,9 @@ export default [
     path: '/contact',
     text: 'contact',
   },
+
+  {
+    path: '/sponsors',
+    text: 'sponsors',
+  },
 ]

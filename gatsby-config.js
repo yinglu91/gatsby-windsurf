@@ -35,6 +35,15 @@ module.exports = {
   },
   pathPrefix: '/gatsby-contentful-starter',
   plugins: [
+    'gatsby-transformer-screenshot',
+    'gatsby-transformer-yaml',
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'data',
+        path: './src/data',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {

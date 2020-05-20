@@ -1,0 +1,168 @@
+  query SitesQuery {
+    sponsors: allSitesYaml {
+      nodes {
+        id
+        url
+        title
+        childScreenshot {
+          screenshotFile {
+            childImageSharp {
+              resolutions(width: 384, height: 288) {
+                src
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+--------
+{
+  "data": {
+    "sponsors": {
+      "nodes": [
+        {
+          "id": "74016fe6-74d6-5945-822a-6874c2f83de2",
+          "url": "http://aloha-guides.com/",
+          "title": "Aloha Guides, LLC (SUP Lessons-Monmouth County)",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/2e380a63ea525b40c734968cae8891bd/4f17c/b015074dda3fae2de879b2fd3c3772d9.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "50a988ad-5e7e-5c85-adda-651681ee26fe",
+          "url": "https://greenhatkiteboarding.com/",
+          "title": "Greenhat Kiteboarding (Kiteboard Lessons-Neptune)",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/a0c49be83f596d34997a26151f4dc29d/4f17c/bf01cec0567dcae63a57c16784bbb48d.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "68460839-0c14-52c6-a977-c919c225ebf7",
+          "url": "https://aquavida.com/",
+          "title": "Aqua Vida SUP Yoga (Long Branch - Philadelphia)",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/7df75f064a614fd17f652a72d58c3b46/4f17c/959dae6ba9a5e8feae48b7aab61ab367.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "71cb0033-f4bf-5e67-a2b7-5262777c38de",
+          "url": "http://windsurfresource.com/",
+          "title": "WindsurfResource.com (Launch Site Information)",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/6091d36b1c86f421a771e003861bd2b0/4f17c/b1f0de2431a8ce8bcedd47a502ca9f5f.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "3533dc49-86f3-533a-94d5-7a549893478a",
+          "url": "http://windsurfnj.org/index.htm",
+          "title": "windsurfnj",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/398a2e0381804ce0f1b4db1df83ed825/4f17c/9f53544dd1859bae63b55b53d32cf4f4.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "028702d1-718c-5ab8-be70-6e3af091be3b",
+          "url": "https://www.youtube.com/user/NewJerseyWindsurfing",
+          "title": "NJWWA's YouTube Channel",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/d082ebc888b30e0768b9bd10a9fb33ed/4f17c/d87c36cf9210c947d1a4e64894e4075c.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "9a1d35bf-e8b5-5956-8da1-6f76c086a806",
+          "url": "http://www.lakesbayrec.org/",
+          "title": "Lakes Bay Recreation Association (LBRA)",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/9b990a04737e3ee09bc148edcb2f8807/4f17c/9fcc18604e8aaa14e8b9d8b25c3f1f92.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "97a80ea3-ac95-5603-9f8a-57195f9a3213",
+          "url": "https://windsurfbaba.org/",
+          "title": "Baltimore Area Boardsailing Association (BABA)",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/34a555dce05af1d6ecf19fb1f2044aef/4f17c/175236cf6bfc6c86860f296451aa9f51.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "33aecc29-f964-51a9-84dd-48b6be2c5117",
+          "url": "http://www.uswindsurfing.org/",
+          "title": "United States Windsurfing Association (USWA)",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/a5d12d2bf7d8de909539d242a3342714/4f17c/b1fa6115c02aa7d6af9009f9cdd863f7.png"
+                }
+              }
+            }
+          }
+        },
+        {
+          "id": "809c6924-1949-5694-83c6-cead2f79c5c3",
+          "url": "https://theodorawarre.eu",
+          "title": "Theodora Warre",
+          "childScreenshot": {
+            "screenshotFile": {
+              "childImageSharp": {
+                "resolutions": {
+                  "src": "/static/0061d8fe8ca690cfc093a42f3afdab90/4f17c/f8bf3ab46cfcd85855181694f459022b.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
