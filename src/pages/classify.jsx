@@ -15,7 +15,7 @@ const ProductsPage = ({ data }) => {
           sadfsadfsaf shopping online is font...
         </h4>
       </StyledHero>
-      <Title title="our" subtitle="products" />
+      <Title title="our" subtitle="classify" />
 
       <Products />
     </Layout>

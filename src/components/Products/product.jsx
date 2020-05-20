@@ -1,7 +1,7 @@
 import React from 'react'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import VideoEmbed from '../VideoEmbed'
-import styles from '../../css/tour.module.css'
+import styles from '../../css/product.module.css'
 import BuyButton from '../BuyButton'
 
 const options = {
@@ -39,7 +39,7 @@ const product = ({ product }) => {
   const { id, priceAndDescription: price, product: name } = product
   return (
     <article className={styles.tour}>
-      <div className={styles.imgContainer}>
+      <div className={styles.hvrFloatShadow}>
         {documentToReactComponents(product.content.json, options)}
       </div>
 

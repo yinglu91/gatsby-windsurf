@@ -13,8 +13,8 @@ export default [
     text: 'blogs',
   },
   {
-    path: '/products',
-    text: 'products',
+    path: '/classify',
+    text: 'classify',
   },
 
   {
