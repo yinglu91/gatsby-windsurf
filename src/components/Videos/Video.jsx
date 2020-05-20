@@ -37,14 +37,12 @@ const video = ({ video }) => {
   const { title, date, videoUrl } = video
   return (
     <article className={styles.tour}>
-      <div className={styles.imgContainer}>
-        <VideoEmbed url={videoUrl} title={title} />
-      </div>
+      <VideoEmbed url={videoUrl} title={title} />
 
       <div className={styles.footer}>
         <h3>{title}</h3>
         <div className={styles.info}>
-          <h4 style={{ marginBottom: '1rem' }}>{date}</h4>
+          <p style={{ marginBottom: '1rem' }}>{date}</p>
         </div>
       </div>
     </article>

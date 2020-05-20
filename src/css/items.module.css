@@ -1,10 +1,10 @@
 .tours {
-  padding: 4rem 0;
+  padding: 1rem 0;
   text-align: center;
 }
 .center {
   width: 80vw;
-  margin: 3rem auto;
+  margin: 1rem auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   grid-column-gap: 2rem;
@@ -17,7 +17,7 @@
 }
 @media screen and (min-width: 1200px) {
   .center {
-    width: 100%;
-    max-width: 1170px;
+    width: 90%;
+    /* max-width: 1170px; */
   }
 }
