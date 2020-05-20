@@ -30,22 +30,6 @@
   categories:
     - Windsurf Resource
 
-- title: windsurfnj
-  main_url: http://windsurfnj.org/index.htm
-  url: http://windsurfnj.org/index.htm
-  source_url: http://windsurfnj.org/index.htm
-  featured: true
-  categories:
-    - windsurfnj
-
-- title: NJWWA's YouTube Channel
-  main_url: https://www.youtube.com/user/NewJerseyWindsurfing
-  url: https://www.youtube.com/user/NewJerseyWindsurfing
-  source_url: https://www.youtube.com/user/NewJerseyWindsurfing
-  featured: true
-  categories:
-    - NJWWA's YouTube Channel
-
 - title: Lakes Bay Recreation Association (LBRA)
   main_url: http://www.lakesbayrec.org/
   url: http://www.lakesbayrec.org/
@@ -69,15 +53,3 @@
   featured: true
   categories:
     - United States Windsurfing Association (USWA)
-
-- title: Theodora Warre
-  main_url: https://theodorawarre.eu
-  url: https://theodorawarre.eu
-  description: >-
-    E-commerce site for jewellery designer Theodora Warre, built using Gatsby + Shopify + Prismic + Matter.js
-  categories:
-    - E-commerce
-    - Marketing
-  built_by: Pierre Nel
-  built_by_url: https://pierre.io
-  featured: false
