@@ -6,7 +6,6 @@ import About from '../components/Home/About'
 import StyledHero from '../components/StyledHero'
 import { graphql } from 'gatsby'
 import SEO from '../components/SEO'
-import VideoEmbed from '../components/VideoEmbed'
 
 const IndexPage = ({ data }) => {
   return (

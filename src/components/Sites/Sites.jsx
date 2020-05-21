@@ -8,6 +8,14 @@ const getData = graphql`
       nodes {
         id: contentful_id
         name
+        description {
+          description
+        }
+        hero {
+          fluid(maxWidth: 800, quality: 90) {
+            ...GatsbyContentfulFluid
+          }
+        }
         latitude
         longitude
         body {

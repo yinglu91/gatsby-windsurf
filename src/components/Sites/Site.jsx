@@ -1,6 +1,7 @@
 import React from 'react'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import styles from '../../css/site.module.css'
+import Img from 'gatsby-image'
 
 const options = {
   renderNode: {
@@ -26,16 +27,24 @@ const options = {
 }
 
 const site = ({ site }) => {
-  const { id, name, latitude, longitude, body } = site
+  const { id, name, latitude, longitude, body, hero } = site
   return (
     <article className={styles.tour}>
       <div className={styles.footer}>
         <h3>{name}</h3>
       </div>
 
-      <div className={styles.hvrFloatShadow}>
-        {documentToReactComponents(body.json, options)}
-      </div>
+      {hero && (
+        <div className={styles.hvrFloatShadow}>
+          <Img fluid={hero.fluid} style={{ width: 300, height: 200 }} />
+        </div>
+      )}
+
+      {!hero && (
+        <div className={styles.hvrFloatShadow}>
+          {documentToReactComponents(body.json, options)}
+        </div>
+      )}
     </article>
   )
 }
