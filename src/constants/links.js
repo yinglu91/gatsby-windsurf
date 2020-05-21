@@ -3,6 +3,12 @@ export default [
     path: '/',
     text: 'home',
   },
+
+  // {
+  //   path: '/news',
+  //   text: 'news',
+  // },
+
   {
     path: '/videos',
     text: 'videos',
