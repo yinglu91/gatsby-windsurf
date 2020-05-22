@@ -1,0 +1,47 @@
+- name: Jeffrey Bauer
+  title: President
+  imageUrl: ./images/jeff.png
+  order: 1
+  department: Board of Directors
+
+- name: Allen Schultz
+  title: Vice President
+  imageUrl: ./images/jeff.png
+  order: 2
+  department: Board of Directors
+
+- name: Jean Luc Peyrot
+  title: Secretary
+  imageUrl: ./images/jeff.png
+  order: 3
+  department: Board of Directors
+
+- name: William DeStefano
+  title: LBI Event Chair
+  imageUrl: ./images/jeff.png
+  order: 4
+  department: Board of Directors
+
+- name: Brian Rauch
+  title: Lakes Bay Event Chair
+  imageUrl: ./images/jeff.png
+  order: 5
+  department: Board of Directors
+
+- name: Marah Shiels
+  title: Sandy Hook Event Chair
+  imageUrl: ./images/jeff.png
+  order: 6
+  department: Board of Directors
+
+- name: Antoni Dabrowski
+  title: Barnegat Event Chair
+  imageUrl: ./images/jeff.png
+  order: 7
+  department: Board of Directors
+
+- name: Eileen Pfafman
+  title: Membership Chair
+  imageUrl: ./images/jeff.png
+  order: 8
+  department: Board of Directors

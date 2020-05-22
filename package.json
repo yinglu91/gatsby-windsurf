@@ -10,6 +10,7 @@
     "@contentful/rich-text-react-renderer": "^13.4.0",
     "@reach/dialog": "^0.10.1",
     "babel-plugin-styled-components": "^1.10.7",
+    "bluebird": "^3.7.2",
     "gatsby-background-image": "^1.1.1",
     "gatsby-image": "^2.3.4",
     "gatsby-plugin-playground": "^1.0.6",

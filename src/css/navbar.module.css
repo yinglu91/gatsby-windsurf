@@ -1,5 +1,13 @@
+.navbar {
+  display: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
 .nav-header {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1.25rem;

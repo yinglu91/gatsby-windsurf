@@ -1,0 +1,50 @@
+{
+  "data": {
+    "site": {
+      "id": "4nWfyzMd2hqz8o0YRjdj8Y",
+      "name": "Sandy Hook",
+      "description": {
+        "description": "More popularly know as \"The Hook\", Gateway National Park offers some of the best windsurfing conditions north of Hatteras.\nWindsurfing and kite-boarding is best on the bay across from Beach Area C. Horseshoe Cove is popular with recreational boaters. Landing on beach with a motorized boat is prohibited.\n"
+      },
+      "hero": {
+        "fluid": {
+          "src": "//images.ctfassets.net/olumsymogrql/CYnnW18hzJ4qn88qm9zPi/ce2b0ddf40c0f83095f7626060d2dcd7/sandyhook.jpg?w=800&q=90"
+        }
+      },
+      "latitude": 40.415038,
+      "longitude": -73.98149,
+      "body": {
+        "json": {
+          "nodeType": "document",
+          "data": {},
+          "content": [
+            {
+              "nodeType": "paragraph",
+              "content": [
+                {
+                  "nodeType": "text",
+                  "value": "",
+                  "marks": [],
+                  "data": {}
+                }
+              ],
+              "data": {}
+            },
+            {
+              "nodeType": "paragraph",
+              "content": [
+                {
+                  "nodeType": "text",
+                  "value": "",
+                  "marks": [],
+                  "data": {}
+                }
+              ],
+              "data": {}
+            }
+          ]
+        }
+      }
+    }
+  }
+}

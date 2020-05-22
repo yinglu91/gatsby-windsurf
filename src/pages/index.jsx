@@ -3,6 +3,7 @@ import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Layout from '../components/Layout'
 import Banner from '../components/Banner'
 import About from '../components/Home/About'
+import Services from '../components/Home/Services'
 
 import StyledHero from '../components/StyledHero'
 import { graphql } from 'gatsby'
@@ -32,6 +33,7 @@ const IndexPage = ({ data }) => {
 
       <div id="about" css={{ height: 0 }} ref={aboutRef} />
       <About />
+      <Services />
     </Layout>
   )
 }

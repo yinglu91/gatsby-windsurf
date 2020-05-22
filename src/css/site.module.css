@@ -2,9 +2,9 @@
   box-shadow: var(--lightShadow);
   transition: var(--mainTransition);
 }
-/* .tour:hover {
+.tour:hover {
   box-shadow: var(--darkShadow);
-} */
+}
 
 .img-container {
   position: relative;
@@ -15,7 +15,7 @@
   transition: var(--mainTransition);
 }
 .img-container:hover .img {
-  opacity: 0.5;
+  opacity: 0.2;
 }
 
 /* Float Shadow */
@@ -99,8 +99,8 @@
 
 .footer {
   padding: 1rem;
-  text-align: left;
-  background: var(--primaryColor);
+  text-align: center;
+  /* background: var(--primaryColor); */
   margin-bottom: 1rem;
 }
 .footer h3 {

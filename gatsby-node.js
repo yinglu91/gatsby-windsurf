@@ -1,32 +1,13 @@
-const path = require('path')
+const Promise = require(`bluebird`)
 
-exports.createPages = async ({ graphql, actions: { createPage } }) => {
-  const result = await graphql(
-    `
-      {
-        allContentfulBlogPost {
-          nodes {
-            slug
-          }
-        }
-      }
-    `
-  )
+const blogs = require(`./src/utils/node/blogs.js`)
+const sites = require(`./src/utils/node/sites.js`)
+const sections = [blogs, sites]
 
-  if (result.errors) {
-    console.log(result.errors)
-    return
-  }
-
-  // "slug": "hello-world"
-  // http://localhost:8000/blogs/hello-world/
-  result.data.allContentfulBlogPost.nodes.forEach((node) => {
-    createPage({
-      path: `/blogs/${node.slug}/`,
-      component: path.resolve('./src/templates/blog-post.js'),
-      context: {
-        slug: node.slug,
-      },
-    })
-  })
+exports.createPages = async (helpers) => {
+  await Promise.all(sections.map((section) => section.createPages(helpers)))
 }
+
+// exports.onCreateNode = (helpers) => {
+//   sections.forEach((section) => section.onCreateNode(helpers))
+// }

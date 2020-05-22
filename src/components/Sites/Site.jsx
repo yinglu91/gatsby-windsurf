@@ -2,6 +2,7 @@ import React from 'react'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import styles from '../../css/site.module.css'
 import Img from 'gatsby-image'
+import AniLink from 'gatsby-plugin-transition-link/AniLink'
 
 const options = {
   renderNode: {
@@ -27,24 +28,25 @@ const options = {
 }
 
 const site = ({ site }) => {
-  const { id, name, latitude, longitude, body, hero } = site
+  const { slug, name, latitude, longitude, body, hero } = site
   return (
     <article className={styles.tour}>
-      <div className={styles.footer}>
-        <h3>{name}</h3>
+      <div className={styles.imgContainer}>
+        <Img fluid={hero.fluid} style={{ width: 400, height: 200 }} />
+        <AniLink fade className={styles.link} to={`/sites/${slug}`}>
+          read more
+        </AniLink>
       </div>
 
-      {hero && (
-        <div className={styles.hvrFloatShadow}>
-          <Img fluid={hero.fluid} style={{ width: 300, height: 200 }} />
-        </div>
-      )}
-
-      {!hero && (
+      {/* {!hero && (
         <div className={styles.hvrFloatShadow}>
           {documentToReactComponents(body.json, options)}
         </div>
-      )}
+      )} */}
+
+      <div className={styles.footer}>
+        <h3>{name}</h3>
+      </div>
     </article>
   )
 }

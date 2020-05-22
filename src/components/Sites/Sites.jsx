@@ -8,6 +8,7 @@ const getData = graphql`
       nodes {
         id: contentful_id
         name
+        slug
         description {
           description
         }
