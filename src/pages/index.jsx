@@ -26,7 +26,7 @@ const IndexPage = ({ data }) => {
           info="lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente id sit ut soluta quam."
         >
           <a href="#" className="btn-white" onClick={toAbout}>
-            <b>EXPLORE US</b>
+            <b>about US</b>
           </a>
         </Banner>
       </StyledHero>

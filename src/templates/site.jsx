@@ -10,14 +10,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import SEO from '../components/SEO'
 
 const SiteTemplate = ({ data }) => {
-  const {
-    id,
-    name,
-    description: { description },
-    hero,
-    latitude,
-    longitude,
-  } = data.site
+  const { id, name, hero, latitude, longitude, body } = data.site
 
   const options = {
     renderNode: {
@@ -57,9 +50,8 @@ const SiteTemplate = ({ data }) => {
       <section className={styles.site}>
         <div className={styles.center}>
           <h1>{name}</h1>
-          <p>{description}</p>
 
-          {/* <div>{documentToReactComponents(body.json, options)}</div> */}
+          <div>{documentToReactComponents(body.json, options)}</div>
 
           {/* <div
             dangerouslySetInnerHTML={{
@@ -82,9 +74,7 @@ export const query = graphql`
       id: contentful_id
       name
       slug
-      description {
-        description
-      }
+
       hero {
         fluid(maxWidth: 800, quality: 90) {
           ...GatsbyContentfulFluid
@@ -92,6 +82,9 @@ export const query = graphql`
       }
       latitude
       longitude
+      body {
+        json
+      }
     }
   }
 `
