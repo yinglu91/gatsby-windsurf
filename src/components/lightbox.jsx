@@ -66,7 +66,7 @@ const Lightbox = ({ images }) => {
               position: 'relative',
               alignItems: 'center',
               order: 1,
-              width: '100%',
+              width: '60vw',
               borderRadius: '4px',
             }}
           >
