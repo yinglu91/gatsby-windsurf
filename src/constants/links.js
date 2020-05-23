@@ -3,6 +3,10 @@ export default [
     path: '/',
     text: 'home',
   },
+  {
+    path: '/sites',
+    text: 'sites',
+  },
 
   // {
   //   path: '/news',
@@ -21,11 +25,6 @@ export default [
   {
     path: '/classify',
     text: 'classify',
-  },
-
-  {
-    path: '/sites',
-    text: 'sites',
   },
 
   {
