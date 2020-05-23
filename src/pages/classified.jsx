@@ -11,7 +11,7 @@ const ProductsPage = ({ data }) => {
     <Layout>
       <SEO title="Products" />
       <StyledHero img={data.defaultBcg.childImageSharp.fluid}></StyledHero>
-      <Title title="our" subtitle="classify" />
+      <Title title="our" subtitle="classified" />
 
       <Products />
     </Layout>

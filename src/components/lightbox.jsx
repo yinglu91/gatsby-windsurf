@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Img from 'gatsby-image'
 import styled from 'styled-components'
-import 'react-responsive-modal/styles.css'
+import '../css/react-responsive-modal/styles.css'
 import { Modal } from 'react-responsive-modal'
 
 const LightboxContainer = styled.div`
