@@ -23,8 +23,8 @@ export default [
     text: 'blogs',
   },
   {
-    path: '/classify',
-    text: 'classify',
+    path: '/classified',
+    text: 'classified',
   },
 
   {

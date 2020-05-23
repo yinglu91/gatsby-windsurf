@@ -17,7 +17,7 @@ const getData = graphql`
         title
         imageUrl {
           childImageSharp {
-            fixed(width: 60, height: 60) {
+            fixed(width: 100, height: 100) {
               ...GatsbyImageSharpFixed
             }
           }
@@ -32,7 +32,7 @@ const Services = () => {
 
   return (
     <section className={styles.services}>
-      <Title title="our" subtitle="Board of Directors" />
+      <Title title="Board of" subtitle="Directors" />
 
       <div className={styles.center}>
         {data.allPersonsYaml.nodes.map(({ id, name, title, imageUrl }) => (
@@ -41,8 +41,7 @@ const Services = () => {
               fixed={imageUrl.childImageSharp.fixed}
               alt="person"
               style={{
-                // marginRight: rhythm(1 / 2),
-                marginBottom: 0,
+                marginBottom: 10,
                 minWidth: 50,
                 borderRadius: `100%`,
               }}
@@ -51,8 +50,8 @@ const Services = () => {
               }}
             />
 
-            <h5>{name}</h5>
-            <p>{title}</p>
+            <h4>{name}</h4>
+            <h6>{title}</h6>
           </article>
         ))}
       </div>

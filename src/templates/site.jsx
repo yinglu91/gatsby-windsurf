@@ -49,20 +49,22 @@ const SiteTemplate = ({ data }) => {
       <StyledHero site="true" img={hero.fluid} />
       <section className={styles.site}>
         <div className={styles.center}>
-          <h1>{name}</h1>
+          <div style={{ marginBottom: '20px' }}>
+            <h1>{name}</h1>
 
-          <div>{documentToReactComponents(body.json, options)}</div>
+            <div>{documentToReactComponents(body.json, options)}</div>
 
-          <iframe
-            width="600"
-            height="400"
-            id="gmap_canvas"
-            src="https://maps.google.com/maps?q=S%20Bayview%20Ave%20%26%2024th%20Ave%2C%20Seaside%20Park%2C%20NJ%2008752&t=&z=13&ie=UTF8&iwloc=&output=embed"
-            frameborder="0"
-            scrolling="no"
-            marginheight="0"
-            marginwidth="0"
-          ></iframe>
+            <iframe
+              width="600"
+              height="400"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=S%20Bayview%20Ave%20%26%2024th%20Ave%2C%20Seaside%20Park%2C%20NJ%2008752&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameborder="0"
+              scrolling="no"
+              marginheight="0"
+              marginwidth="0"
+            ></iframe>
+          </div>
           <AniLink fade to="/sites" className="btn-primary">
             all sites
           </AniLink>

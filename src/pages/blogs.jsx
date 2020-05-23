@@ -10,9 +10,7 @@ const BlogsPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Blogs" />
-      <StyledHero img={data.defaultBcg.childImageSharp.fluid}>
-        <h4 style={{ color: 'white' }}>BlogsPage BlogsPage BlogsPage</h4>
-      </StyledHero>
+      <StyledHero img={data.defaultBcg.childImageSharp.fluid}></StyledHero>
       <Title title="our" subtitle="blogs" />
 
       <Blogs />

@@ -10,11 +10,7 @@ const ProductsPage = ({ data }) => {
   return (
     <Layout>
       <SEO title="Products" />
-      <StyledHero img={data.defaultBcg.childImageSharp.fluid}>
-        <h4 style={{ color: 'white' }}>
-          sadfsadfsaf shopping online is font...
-        </h4>
-      </StyledHero>
+      <StyledHero img={data.defaultBcg.childImageSharp.fluid}></StyledHero>
       <Title title="our" subtitle="classify" />
 
       <Products />
