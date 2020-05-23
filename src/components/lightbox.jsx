@@ -67,7 +67,7 @@ const Lightbox = ({ images }) => {
               alignItems: 'center',
               order: 1,
               width: '60vw',
-              borderRadius: '4px',
+              borderRadius: '10px',
             }}
           >
             <Img fluid={selectedImage.fluid} />
