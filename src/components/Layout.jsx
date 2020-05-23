@@ -7,8 +7,10 @@ const Layout = ({ children }) => {
   return (
     <main>
       <Navbar />
-      {children}
-      <Footer />
+      <div style={{ marginTop: '65px' }}>
+        {children}
+        <Footer />
+      </div>
     </main>
   )
 }
