@@ -7,6 +7,9 @@ import socialIcons from '../constants/social-icons'
 import logo from '../images/logo2.jpg'
 import styled from 'styled-components'
 
+import { Link, navigate } from 'gatsby'
+import { getUser, isLoggedIn, logout } from '../services/auth'
+
 const Navbar = () => {
   const [isOpen, setNav] = useState(false)
   const toggleNav = () => {
@@ -58,6 +61,22 @@ const Navbar = () => {
               </AniLink>
             </li>
           ))}
+
+          {/* https://www.gatsbyjs.org/tutorial/authentication-tutorial/ */}
+          {` `}
+          {isLoggedIn() ? (
+            <li>
+              <a
+                href="/"
+                onClick={(event) => {
+                  event.preventDefault()
+                  logout(() => navigate(`/app/login`))
+                }}
+              >
+                Logout
+              </a>
+            </li>
+          ) : null}
         </ul>
 
         {/* external links use a tag */}
