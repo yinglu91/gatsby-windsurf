@@ -6,7 +6,7 @@ import Title from '../Title'
 
 const Login = () => {
   const [state1, setState1] = useState({
-    username: ``,
+    email: ``,
     password: ``,
   })
 
@@ -40,11 +40,11 @@ const Login = () => {
           className={styles.form}
         >
           <div>
-            <label htmlFor="username">Username</label>
+            <label htmlFor="email">email</label>
             <input
-              type="text"
-              id="username"
-              name="username"
+              type="email"
+              id="email"
+              name="email"
               onChange={handleUpdate}
               className={styles.formControl}
             />

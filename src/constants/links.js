@@ -4,6 +4,10 @@ export default [
     text: 'home',
   },
   {
+    path: '/directors',
+    text: 'directors',
+  },
+  {
     path: '/sites',
     text: 'sites',
   },
@@ -13,24 +17,24 @@ export default [
   //   text: 'news',
   // },
 
-  {
-    path: '/videos',
-    text: 'videos',
-  },
+  // {
+  //   path: '/videos',
+  //   text: 'videos',
+  // },
 
-  {
-    path: '/blogs',
-    text: 'blogs',
-  },
-  {
-    path: '/classified',
-    text: 'classified',
-  },
+  // {
+  //   path: '/blogs',
+  //   text: 'blogs',
+  // },
+  // {
+  //   path: '/classified',
+  //   text: 'classified',
+  // },
 
-  {
-    path: '/contact',
-    text: 'contact',
-  },
+  // {
+  //   path: '/contact',
+  //   text: 'contact',
+  // },
 
   {
     path: '/sponsors',

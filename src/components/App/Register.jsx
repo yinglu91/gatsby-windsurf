@@ -6,7 +6,7 @@ import Title from '../Title'
 
 const Registor = () => {
   const [state1, setState1] = useState({
-    username: ``,
+    // username: ``,
     email: ``,
     password: ``,
     password2: ``,
@@ -22,7 +22,7 @@ const Registor = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
 
-    if (username === '' || email === '' || password === '') {
+    if (email === '' || password === '') {
       console.log('missing required fields')
       return
     }
@@ -41,7 +41,7 @@ const Registor = () => {
 
   return (
     <section className={styles.Contact}>
-      <Title title="registor" subtitle="" />
+      <Title title="register" subtitle="" />
 
       <div className={styles.center}>
         <form
@@ -52,7 +52,7 @@ const Registor = () => {
           }}
           className={styles.form}
         >
-          <div>
+          {/* <div>
             <label htmlFor="username">Username</label>
             <input
               type="text"
@@ -61,7 +61,7 @@ const Registor = () => {
               onChange={handleUpdate}
               className={styles.formControl}
             />
-          </div>
+          </div> */}
 
           <div>
             <label htmlFor="email">Email</label>
@@ -96,7 +96,7 @@ const Registor = () => {
             />
           </div>
 
-          <input type="submit" value="Registion" className={styles.submit} />
+          <input type="submit" value="Registration" className={styles.submit} />
         </form>
       </div>
     </section>
