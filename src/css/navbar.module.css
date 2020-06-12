@@ -62,7 +62,7 @@
     display: none;
   }
   .nav-center {
-    max-width: 1170px;
+    /* max-width: 1170px; */
     margin: 0 auto;
     display: flex;
     justify-content: space-between;

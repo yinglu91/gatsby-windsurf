@@ -4,9 +4,13 @@ export default [
     text: 'home',
   },
   {
-    path: '/directors',
-    text: 'directors',
+    path: '/news-letters',
+    text: 'news letters',
   },
+  // {
+  //   path: '/directors',
+  //   text: 'directors',
+  // },
   {
     path: '/sites',
     text: 'sites',
@@ -17,19 +21,19 @@ export default [
   //   text: 'news',
   // },
 
-  // {
-  //   path: '/videos',
-  //   text: 'videos',
-  // },
+  {
+    path: '/videos',
+    text: 'videos',
+  },
 
-  // {
-  //   path: '/blogs',
-  //   text: 'blogs',
-  // },
-  // {
-  //   path: '/classified',
-  //   text: 'classified',
-  // },
+  {
+    path: '/blogs',
+    text: 'blogs',
+  },
+  {
+    path: '/classified',
+    text: 'classified',
+  },
 
   // {
   //   path: '/contact',
