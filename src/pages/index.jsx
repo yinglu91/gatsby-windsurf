@@ -1,9 +1,8 @@
 import React from 'react'
-import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import Layout from '../components/Layout'
 import Banner from '../components/Banner'
 import About from '../components/Home/About'
-import Services from '../components/Home/Services'
+import Board from '../components/Home/Board'
 
 import StyledHero from '../components/StyledHero'
 import { graphql } from 'gatsby'
@@ -23,7 +22,7 @@ const IndexPage = ({ data }) => {
       <StyledHero home="true" img={data.defaultBcg.childImageSharp.fluid}>
         <Banner
           title="NJ Windsurf Watersport Association"
-          info="lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum sapiente id sit ut soluta quam."
+          info="The New Jersey Windsurfing & Watersports Association (NJWWA) is a member-based organization that ensures the growth of recreational and competitive windsurfing, kitesurfing, kayaking, paddle boarding, and other non-motorized watersports in the Mid-Atlantic region of the United States."
         >
           <a href="#" className="btn-white" onClick={toAbout}>
             <b>about US</b>
@@ -33,7 +32,7 @@ const IndexPage = ({ data }) => {
 
       <div id="about" css={{ height: 0 }} ref={aboutRef} />
       <About />
-      <Services />
+      <Board />
     </Layout>
   )
 }

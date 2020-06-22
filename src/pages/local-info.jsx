@@ -9,9 +9,9 @@ import Title from '../components/Title'
 const SitesPage = ({ data }) => {
   return (
     <Layout>
-      <SEO title="Sites" />
+      <SEO title="Local Info" />
       <StyledHero img={data.defaultBcg.childImageSharp.fluid}></StyledHero>
-      <Title title="our" subtitle="sites" />
+      <Title title="Local" subtitle="Info" />
 
       <Sites />
     </Layout>

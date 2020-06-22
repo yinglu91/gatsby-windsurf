@@ -28,7 +28,7 @@ const Login = () => {
 
   return (
     <section className={styles.Contact}>
-      <Title title="login" subtitle="in" />
+      <Title title="login" subtitle="" />
 
       <div className={styles.center}>
         <form

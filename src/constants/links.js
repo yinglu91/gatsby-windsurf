@@ -12,8 +12,8 @@ export default [
   //   text: 'directors',
   // },
   {
-    path: '/sites',
-    text: 'sites',
+    path: '/local-info',
+    text: 'Local Info',
   },
 
   // {
