@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import styles from '../../css/items.module.css'
 import Product from './Product'
 
-const productList = (props) => {
+const ProductList = (props) => {
   const [products, setProducts] = useState([])
   const [sortedProducts, setSortedProducts] = useState([])
 
@@ -22,4 +22,4 @@ const productList = (props) => {
   )
 }
 
-export default productList
+export default ProductList

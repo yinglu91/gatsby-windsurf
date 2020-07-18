@@ -17,9 +17,10 @@ const getData = graphql`
   }
 `
 
-// products component
-export default () => {
+const Products = () => {
   const { products } = useStaticQuery(getData)
 
   return <ProductList products={products} />
 }
+
+export default Products

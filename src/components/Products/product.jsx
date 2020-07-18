@@ -35,7 +35,7 @@ const options = {
   },
 }
 
-const product = ({ product }) => {
+const Product = ({ product }) => {
   const { id, priceAndDescription: price, product: name } = product
   return (
     <article className={styles.tour}>
@@ -63,4 +63,4 @@ const product = ({ product }) => {
   )
 }
 
-export default product
+export default Product
